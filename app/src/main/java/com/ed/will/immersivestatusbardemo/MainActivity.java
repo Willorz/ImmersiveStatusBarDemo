@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    @OnClick({R.id.first_btn, R.id.second_btn, R.id.third_btn, R.id.fourth_btn,R.id.fifth_btn})
+    @OnClick({R.id.first_btn, R.id.second_btn, R.id.third_btn, R.id.fourth_btn, R.id.fifth_btn})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.first_btn:
@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(fourth);
                 break;
             case R.id.fifth_btn:
-                Intent fifth=new Intent(MainActivity.this,FifthActivity.class);
+                Intent fifth = new Intent(MainActivity.this, FifthActivity.class);
                 startActivity(fifth);
                 break;
         }

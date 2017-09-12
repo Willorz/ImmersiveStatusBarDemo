@@ -8,18 +8,20 @@ import android.view.View;
 
 /**
  * Created by will on 17-9-12.
+ * 隐藏状态栏和导航栏
+ * 触摸屏幕任意位置都会推出全屏
  */
 
 public class ThirdActivity extends AppCompatActivity {
     @Override
-    protected void onCreate( Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fullscreen);
 
-        View decorView=getWindow().getDecorView();
-        int option=View.SYSTEM_UI_FLAG_HIDE_NAVIGATION|View.SYSTEM_UI_FLAG_FULLSCREEN;
+        View decorView = getWindow().getDecorView();
+        int option = View.SYSTEM_UI_FLAG_HIDE_NAVIGATION | View.SYSTEM_UI_FLAG_FULLSCREEN;
         decorView.setSystemUiVisibility(option);
-        ActionBar actionBar=getSupportActionBar();
+        ActionBar actionBar = getSupportActionBar();
         actionBar.hide();
     }
 }
