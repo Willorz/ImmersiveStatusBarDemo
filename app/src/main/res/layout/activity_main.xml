@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/girl"
+    android:padding="20dp"
+    tools:context="com.ed.will.immersivestatusbardemo.MainActivity">
+
+    />
+
+    <Button
+        android:id="@+id/first_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="隐藏状态栏和ActionBar"/>
+
+    <Button
+        android:id="@+id/second_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="透明状态栏效果"/>
+
+    <Button
+        android:id="@+id/third_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="隐藏状态栏、ActionBar及导航栏"/>
+
+    <Button
+        android:id="@+id/fourth_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="透明状态栏和透明导航栏效果"/>
+
+    <Button
+        android:id="@+id/fifth_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="真正的沉浸式"/>
+
+</LinearLayout>
